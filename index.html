@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="quiz.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="quiz-container">
+        <h1 class="text-center">Quiz Application</h1>
+        <p class="instruction">Once you click on 'start quiz', your time begins to count. You have 5 minutes for 10 questions. Good Luck.</p>
+        <button id="start-btn">Start Quiz</button>
+        <div class="timer text-center">
+          <span id="time">0:00</span>
+        </div>
+        <div id="timercontainer" class="mb-4">
+          <p id="question"></p>
+          <ul id="choices" class="list-unstyled"></ul>
+        </div>
+        <button id="submit-btn" class="btn btn-primary d-none">
+          Submit
+        </button>
+        <p id="score" class="text-center mt-4"></p>
+        <button id="restart-btn" class="btn btn-secondary d-none">
+          Restart
+        </button>
+      </div>
+    </div>
+    <script src="quiz.js"></script>
+  </body>
+</html>
